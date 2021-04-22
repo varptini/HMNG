@@ -1,0 +1,72 @@
+/*
+.table-condensed>tbody>tr>td, 
+.table-condensed>tbody>tr>th, 
+.table-condensed>tfoot>tr>td, 
+.table-condensed>tfoot>tr>th, 
+.table-condensed>thead>tr>td, 
+table-condensed>thead>tr>th {padding: 0px;}
+.written_field {
+    border-bottom: 0.1pt solid black;
+}*/
+@page {
+	margin: 1cm;
+}
+
+body {
+  font-family: sans-serif;
+	margin: 0.5cm 0;
+	text-align: justify;
+}
+
+#header,
+#footer {
+  position: fixed;
+  left: 0;
+	right: 0;
+	color: #aaa;
+	font-size: 0.9em;
+}
+
+#header {
+  top: 0;
+	border-bottom: 0.1pt solid #aaa;
+}
+
+#footer {
+  bottom: 0;
+  border-top: 0.1pt solid #aaa;
+}
+
+#header table,
+#footer table {
+	width: 100%;
+	border-collapse: collapse;
+	border: none;
+}
+
+#header td,
+#footer td {
+  padding: 0;
+	width: 80%;
+}
+
+.page-number {
+  text-align: right;
+}
+
+.page-number:before {
+  /*content:  counter(page);*/
+  content:  counter(page);  
+}
+
+hr {
+  page-break-after: always;
+  border: 0;
+}
+/*#pageNumbers div:before { 
+  counter-increment: currentPage; 
+  content: "Page " counter(currentPage) " of "; 
+}
+#pageNumbers div:after { 
+  content: counter(pageTotal); 
+}*/
